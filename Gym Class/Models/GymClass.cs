@@ -9,5 +9,8 @@
         public DateTime EndTime { get { return StartTime + Duration; } }
         public string Description { get; set; }
 
+        //Navigational property
+        public ICollection<ApplicationUserGymClass> AttendingMembers { get; set; } = new List<ApplicationUserGymClass>();
+ 
     }
 }
